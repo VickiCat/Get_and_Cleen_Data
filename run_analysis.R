@@ -1,15 +1,15 @@
 ## Reading in the data
 
-ytrain <- read.table("./UCI HAR Dataset/train/y_train.txt")
-ytest <- read.table("./UCI HAR Dataset/test/y_test.txt")
+ytrain <- read.table("C:/Program Files/R/UCI HAR Dataset/train/y_train.txt")
+ytest <- read.table("C:/Program Files/R/UCI HAR Dataset/test/y_test.txt")
 y <- rbind(ytrain,ytest)
 
-xtrain <- read.table("./UCI HAR Dataset/train/X_train.txt")
-xtest <- read.table("./UCI HAR Dataset/test/X_test.txt")
+xtrain <- read.table("C:/Program Files/R/UCI HAR Dataset/train/X_train.txt")
+xtest <- read.table("C:/Program Files/R/UCI HAR Dataset/test/X_test.txt")
 x <- rbind(xtrain,xtest)
 
-subjecttrain <- read.table("./UCI HAR Dataset/train/subject_train.txt")
-subjecttest <- read.table("./UCI HAR Dataset/test/subject_test.txt")
+subjecttrain <- read.table("C:/Program Files/R/UCI HAR Dataset/train/subject_train.txt")
+subjecttest <- read.table("C:/Program Files/R/UCI HAR Dataset/test/subject_test.txt")
 subject <- rbind(subjecttrain,subjecttest)
 names(subject) <- "subjects"
 
@@ -23,7 +23,7 @@ y[y==5]<-"STANDING"
 y[y==6]<-"LAYING"
 names(y) <- "activity"
 
-columns <- read.table("./UCI HAR Dataset/features.txt")
+columns <- read.table("C:/Program Files/R/UCI HAR Dataset/features.txt")
 
 names(x) <- columns[,2]
 
