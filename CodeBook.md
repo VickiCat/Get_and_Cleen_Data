@@ -11,22 +11,22 @@ Prerequisite steps before running this script:
 The script will perform the following steps:
 
 1. Read into R the following files from the newly created "UCI HAR Dataset" folder:
-- y_train.txt
-- y_test.txt
-- X_train.txt
-- X_test.txt
-- subject_train.txt
-- subject_test.txt
-- features.txt
+  - y_train.txt
+  - y_test.txt
+  - X_train.txt
+  - X_test.txt
+  - subject_train.txt
+  - subject_test.txt
+  - features.txt
 
 2. Read these files into the following variables respectively:
-- ytrain
-- ytest
-- xtrain
-- xtest
-- subjecttrain
-- subjecttest
-- columns
+  - ytrain
+  - ytest
+  - xtrain
+  - xtest
+  - subjecttrain
+  - subjecttest
+  - columns
 
 3. Merge these variables into one single data set under the variable AllData.
 
